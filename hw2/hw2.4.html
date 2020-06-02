@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Форма</title>
+</head>
+<body>
+<form method="post">
+    <h1>Отправка заявки на конференцию</h1>
+    <h2>Основные данные</h2>
+    <h3>* Фамилия, имя, отчество:</h3>
+    <input type="text" required>
+    <h3>Дата рождения:</h3>
+    <input type="date" >
+    <h3>Пол</h3>
+    <input type="radio" name="gender">Мужской
+    <input type="radio" name="gender">Женский
+    <h2>Данные для создания личного кабинета</h2>
+    <h3>* Адрес электронной почты: </h3>
+    <input type="email" required>
+    <h3>* Пароль для создания личного кабинета: </h3>
+    <input type="password" required>
+    <h3>* Подтверждение пароля: </h3>
+    <input type="password" required>
+    <h2>Материалы для конференции</h2>
+    <h3>* Тема доклада: </h3>
+    <input type="text" required>
+    <h3>* Тезисы доклада (не более 1000 символов): </h3>
+    <textarea rows="5" cols="50" required> </textarea>
+    <h3>Файл презентациии</h3>
+    <input type="file">
+    <h2>Дополнительные опции</h2>
+    <input type="checkbox">Проживание в отеле<br>
+    <input type="checkbox" checked>Завтрак<br>
+    <input type="checkbox">Обед<br>
+    <input type="checkbox">Ужин<br><br>
+    <input type="submit"><br>
+    <p>* Поля отмеченные звездочкой, являютсяобязательными для заполнения</p>
+</form>
+
+</body>
+</html>
