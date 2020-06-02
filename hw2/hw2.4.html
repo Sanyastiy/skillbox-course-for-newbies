@@ -3,6 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Форма</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $( function() {
+            $( "#datepicker" ).datepicker();
+        } );
+    </script>
 </head>
 <body>
 <form method="post">
@@ -11,7 +19,7 @@
     <h3>* Фамилия, имя, отчество:</h3>
     <input type="text" required>
     <h3>Дата рождения:</h3>
-    <input type="date" >
+    <input type="text" id="datepicker">
     <h3>Пол</h3>
     <input type="radio" name="gender">Мужской
     <input type="radio" name="gender">Женский
