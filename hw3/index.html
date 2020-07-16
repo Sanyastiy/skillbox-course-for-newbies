@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
     <meta charset="utf-8">
     <title>Новостное агентство</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="shortcut icon" href="https://img.icons8.com/color/144/000000/jake.png" type="image/x-icon"/>
 </head>
 <body>
 <header>
@@ -16,15 +17,16 @@
                         "Июля", "Августа", "Сентября", "Октября", "Ноября", "Декабря"];
                     var numberMonths = ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"];
                     var myDate = new Date();
-                    var fullDate = myDate.getDate() + " " + months[myDate.getMonth()] + " " + myDate.getFullYear();
+                    //var fullDate = myDate.getDate() + " " + months[myDate.getMonth()] + " " + myDate.getFullYear();
                     var fullDate = myDate.getHours() + ":" + myDate.getMinutes() + " " + myDate.getDate() + "." + numberMonths[myDate.getMonth()] + "." + myDate.getFullYear();
                     document.write(fullDate);
-                </script></div>
+                </script>
+            </div>
         </div>
     </div>
     <div id="header">
         <div class="fixed-container">
-            <img id="logo" src="img/logo.png">
+            <img alt="Выбор города" id="logo-top" src="img/logo.png">
             <label class="select-wrapper">
                 Выбор города
 
@@ -140,7 +142,7 @@
                 </div>
             </div>
             <div class="standart-news-container">
-                <div class="center-left standart-news-column">
+                <div class="center-left standart-column">
                     <div class="standart-news">
                         <div class="standart-news-image img-navalniy"></div>
                         <h4>Алексей Навальный объявил акцию против пенсионной реформы 1 июля</h4>
@@ -154,19 +156,19 @@
                         <div class="standart-news-image img-youtube"></div>
                         <h4>В России заработал стриминговый сервис <br> YouTube</h4>
                         <div class="news-item-props">
-                            <a href="#">/Политика</a>
+                            <a href="#">/Интернет</a>
                             <div class="news-time standart-news">10:45</div>
                             <div class="news-comments-count standart-news">17</div>
                         </div>
                     </div>
                 </div>
 
-                <div class="center-right standart-news-column">
+                <div class="center-right standart-column">
                     <div class="standart-news">
                         <div class="standart-news-image img-passport"></div>
                         <h4>Дума увеличила пошлины за выдачу загранпаспорта и водительских прав</h4>
                         <div class="news-item-props">
-                            <a href="#">/Политика</a>
+                            <a href="#">/Общество</a>
                             <div class="news-time standart-news">10:45</div>
                             <div class="news-comments-count standart-news">17</div>
                         </div>
@@ -184,22 +186,107 @@
             </div>
         </div>
         <div id="column-right">
-            <img src="img/banner-1.png">
-            <img src="img/banner-2.png">
+            <img alt="Ad" src="img/banner-1.png">
+            <img alt="Ad" src="img/banner-2.png">
         </div>
-        <div class="fixed-container">
-            <div class="special-news-big">
-                    <div class="main-news__props_center">/Политика</div>
-                    <h3>Пекин объявил Вашингтон в развязывании торговыой войны <br> о возврате полуострова</h3>
-                    <div class="news-item-props">
-                        <div class="news-time_center">
-                            <script type="text/javascript">var fullDate = myDate.getDate() + " " + months[myDate.getMonth()] + " " + myDate.getFullYear() + " " + myDate.getHours() + ":" + myDate.getMinutes();
-                            document.write(fullDate);</script>
-                        </div>
+        <div class="fixed-container fixed-container__bottom">
+            <div class="special-news-big standart-column">
+                <div class="main-news__props_center">/Политика</div>
+                <h3>Пекин объявил Вашингтон<br> в развязывании торговой<br> войны </h3>
+                <div class="news-item-props">
+                    <div class="news-time_center">
+                        <script type="text/javascript">var fullDate = myDate.getDate() + " " + months[myDate.getMonth()] + " " + myDate.getFullYear() + " " + myDate.getHours() + ":" + myDate.getMinutes();
+                        document.write(fullDate);</script>
                     </div>
+                </div>
+                <div class="special-news-big__text">Министерство коммерции Китая заявило, что Пекин примет
+                    "качественные" <br>и "колличественные" меры, если президент США Дональд Трамп введет <br>дополнительные
+                    пошлины на китайские товары
+                </div>
+            </div>
+            <div class="most-readable-news standart-column">
+                <h2>Самые читаемые новости</h2>
+                <div class="news-item">
+                    <h4>
+                        В Турции пообещали найти альтернативу из-за отказа США поставить F-35
+                    </h4>
+                    <div class="news-item-props">
+                        <a href="#">/Политика</a>
+                        <div class="news-time">10:45</div>
+                        <div class="news-comments-count">17</div>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <h4>
+                        Назван минимальный доход для причисления к среднему классу
+                    </h4>
+                    <div class="news-item-props">
+                        <a href="#">/Политика</a>
+                        <div class="news-time">10:45</div>
+                        <div class="news-comments-count">17</div>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <h4>
+                        Назван минимальный доход для причисления к среднему классу
+                    </h4>
+                    <div class="news-item-props">
+                        <a href="#">/Транспорт</a>
+                        <div class="news-time">10:45</div>
+                        <div class="news-comments-count">17</div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </div>
+<footer>
+    <div class="fixed-container fixed-container__footer">
+        <div class="footer__left standart-column">
+            <nav>
+                <ul class="footer-menu">
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Политика</a></li>
+                    <li><a href="#">Общество</a></li>
+                    <li><a href="#">Экономика</a></li>
+                    <li><a href="#">В мире</a></li>
+                    <li><a href="#">Проишествия</a></li>
+                    <li><a href="#">Спорт</a></li>
+                    <li><a href="#">Наука</a></li>
+                    <li><a href="#">Туризм</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="footer footer__center standart-column">
+            <img alt="Logo" id="logo-bottom" src="img/logoreal.png">
+            <nav>
+                <ul class="footer-menu">
+                    <li><a href="#">Об агенстве</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Опубликовать новость</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="footer footer__right standart-column">
+            <div>
+                <img alt="Vk" class="footer__socials" src="img/vk.png">
+                <img alt="Fb" class="footer__socials" src="img/fb.png">
+                <img alt="Twitter" class="footer__socials" src="img/twitter.png">
+                <img alt="Inst" class="footer__socials" src="img/instagram.png">
+            </div>
+            <div class="footer__phone">
+                <img alt="Phone" class="footer__enquiry standart-column" src="img/call-answer.png">
+                <h4 class="standart-column">+7 (499) 995-55-55</h4>
+            </div>
+            <div class="footer__mail">
+                <img alt="Email" class="footer__enquiry standart-column" src="img/envelope.png">
+                <h4 class="standart-column">info@agency.ru</h4>
+            </div>
+        </div>
+    </div>
+    <div class="footer copyright">
+        <p class="copyright-text">© Новостное агентство, 2017-2018 все права защищены</p>
+    </div>
+</footer>
 </body>
 </html>
