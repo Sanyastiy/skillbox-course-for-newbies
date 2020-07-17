@@ -18,7 +18,14 @@
                     var numberMonths = ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"];
                     var myDate = new Date();
                     //var fullDate = myDate.getDate() + " " + months[myDate.getMonth()] + " " + myDate.getFullYear();
-                    var fullDate = myDate.getHours() + ":" + myDate.getMinutes() + " " + myDate.getDate() + "." + numberMonths[myDate.getMonth()] + "." + myDate.getFullYear();
+                    var numberMinutes=["00","01","02","03","04","05","06","07","08","09"];
+                    var minutes;
+                    if (myDate.getMinutes() in numberMinutes){
+                        minutes=numberMinutes[myDate.getMinutes()];
+                    }else{
+                        minutes=myDate.getMinutes();
+                    }
+                    var fullDate = myDate.getHours() + ":" + minutes + " " + myDate.getDate() + "." + numberMonths[myDate.getMonth()] + "." + myDate.getFullYear();
                     document.write(fullDate);
                 </script>
             </div>
