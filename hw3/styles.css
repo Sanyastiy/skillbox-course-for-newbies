@@ -49,6 +49,7 @@ h3 {
 }
 
 #datetime {
+    display: inline;
     float: right;
     letter-spacing: -0.4px;
 }
@@ -175,6 +176,7 @@ ul.top-menu {
     background-color: #FFFFFF;
     width: 250px;
     float: left;
+    margin-bottom: 30px;
 }
 
 .news-item {
