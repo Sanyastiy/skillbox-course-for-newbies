@@ -1,0 +1,108 @@
+body {
+    font-size: 21px;
+    font-family: "Arial";
+    background-color: #f5f5f5;
+}
+
+h2 {
+    width: 450px;
+}
+
+.main {
+    text-align: center;
+    margin: 100px auto;
+    display: flex;
+    width: 1000px;
+}
+
+/* RIGHT COLUMN*/
+.main_column {
+    margin: 10px auto;
+}
+
+.main_column.right {
+
+}
+
+.main_form {
+    background-color: white;
+    display: flex;
+    border-width: 0;
+    padding: 20px 40px;
+}
+
+.main_form * {
+    flex-direction: column;
+    border-width: 0;
+}
+
+label,#list_empty {
+    text-align: left;
+    color: gray;
+    margin: 20px 0;
+}
+#list_empty{position: fixed;}
+
+button[id="submit"] {
+    margin-top: 1em;
+    background-color: #197ee1;
+    padding: 10px 30px;
+    border: 1px solid transparent;
+    color: white;
+}
+
+input, button {
+    font-size: 20px;
+}
+
+#name, #description {
+    padding: 10px;
+    background-color: #f5f5f5;
+}
+
+/* #RIGHT COLUMN*/
+
+/* left column */
+
+.business_card{
+    margin-bottom: 20px;
+}
+.business_head, .business_body {
+    max-width: 450px;
+    background-color: white;
+}
+
+.business_head {
+    border-bottom: 1px solid grey;
+}
+
+.business_body {
+    color: grey;
+    min-height: 100px;
+    text-align: left;
+    padding: 20px;
+}
+
+h3 {
+    margin: 0;
+    text-align: left;
+    padding: 20px;
+}
+
+.close {
+    cursor: pointer;
+    color: red;
+    margin: 0 20px;
+}
+.reduce{
+    cursor: pointer;
+    color: black;
+    /*content: '\25B2';*/
+    float: right;
+}
+.expand{
+    cursor: pointer;
+    color: black;
+    /*content: '\25BC';*/
+    float: right;
+}
