@@ -1,6 +1,6 @@
 body {
     font-size: 21px;
-    font-family: "Arial";
+    font-family: "Arial", serif;
     background-color: #f5f5f5;
 }
 
@@ -16,22 +16,22 @@ h2 {
 }
 
 /* RIGHT COLUMN*/
-.main_column {
+.main__column {
     margin: 10px auto;
 }
 
-.main_column.right {
+.main__column.right {
 
 }
 
-.main_form {
+.main__form {
     background-color: white;
     display: flex;
     border-width: 0;
     padding: 20px 40px;
 }
 
-.main_form * {
+.main__form * {
     flex-direction: column;
     border-width: 0;
 }
@@ -64,19 +64,19 @@ input, button {
 
 /* left column */
 
-.business_card{
+.card{
     margin-bottom: 20px;
 }
-.business_head, .business_body {
+.card__head, .card__body {
     max-width: 450px;
     background-color: white;
 }
 
-.business_head {
+.card__head {
     border-bottom: 1px solid grey;
 }
 
-.business_body {
+.card__body {
     color: grey;
     min-height: 100px;
     text-align: left;

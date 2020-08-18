@@ -1,0 +1,313 @@
+/*бургер/мобильное меню*/
+.mobile-menu {
+    display: inline-block;
+}
+
+.mobile-menu__btn {
+    display: inline-block;
+    margin-top: 37px;
+    width: 35px;
+    height: 30px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.mobile-menu__checkbox:checked ~ .mobile-menu__btn {
+    position: fixed;
+    z-index: 99999;
+    margin-top: -40px;
+}
+
+
+
+.mobile-menu__icon {
+    display: block;
+    position: relative;
+    background: black;
+    width: 90%;
+    height: 4px;
+    transition: 0.4s;
+}
+
+.mobile-menu__icon::after,
+.mobile-menu__icon::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background: black;
+    width: 100%;
+    height: 4px;
+    transition: 0.4s;
+}
+
+.mobile-menu__icon::after {
+    top: 8px;
+}
+
+.mobile-menu__icon::before {
+    top: -8px;
+}
+
+.mobile-menu__container {
+    position: fixed;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    height: 0;
+    opacity: 1;
+    transition: 0.5s;
+    transition-delay: 0.2s;
+    overflow: hidden;
+    background-color: #27ae60;
+}
+
+.mobile-menu__list {
+    transition: 0.5s;
+    transition-delay: 0.5s;
+    list-style: none;
+    padding-left: 0;
+    margin-top: -50px;
+}
+
+.mobile-menu__item {
+    font-size: 26px;
+    padding-bottom: 15px;
+}
+
+.mobile-menu__link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.mobile-menu__checkbox {
+    display: none;
+}
+
+.mobile-menu__checkbox:checked ~ .mobile-menu__nav {
+    opacity: 1;
+    transition-delay: 0s;
+}
+
+.mobile-menu__checkbox:checked ~ .mobile-menu__container {
+    height: 100%;
+    transition-delay: 0s;
+}
+
+.mobile-menu__checkbox:checked ~ .mobile-menu__btn .mobile-menu__icon {
+    background: transparent;
+}
+
+.mobile-menu__checkbox:checked ~ .mobile-menu__btn .mobile-menu__icon::before,
+.mobile-menu__checkbox:checked ~ .mobile-menu__btn .mobile-menu__icon::after {
+    top: 0;
+}
+
+.mobile-menu__checkbox:checked ~ .mobile-menu__btn .mobile-menu__icon::after {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.mobile-menu__checkbox:checked ~ .mobile-menu__btn .mobile-menu__icon::before {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+/*КОНЕЦ бургер/мобильное меню*/
+
+/*убираем выбор города и погоду*/
+@media screen and (max-width: 720px) {
+    .select-wrapper, .weather {
+        display: none;
+    }
+}
+/*убираем левую колонку*/
+@media screen and (max-width: 810px) {
+    #column-left {
+        display: none;
+    }
+}
+
+/*убираем главное топ меню города и погоду*/
+@media screen and (max-width: 1000px) {
+    #menu-container, form.search {
+        display: none;
+    }
+}
+
+/*мобильное отображение даты, времени, погоды*/
+.misc-mobile {
+    display: none;
+}
+/*картинка для часов*/
+.misc-mobile .news-time {
+    background-image: url("img/icon-time-mobile.png");
+}
+
+.logo-top-title {
+    display: none;
+    margin: 50px 0 0 20px;
+    font-weight: 700;
+    letter-spacing: -.5px;
+}
+
+#search-button {
+    display: inline-block;
+    margin: 50px 0 10px 20px;
+    position: unset;
+    float: right;
+}
+
+@media screen and (min-width: 1000px) {
+    #search-button {
+        display: none;
+    }
+}
+
+#header {
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 1100px) {
+    .fixed-container {
+        margin: 0 30px;
+    }
+
+    h1 {
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    .footer .standart-column {
+        width: unset;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 1439px) {
+    .footer .standart-column {
+        margin: 20px;
+    }
+}
+/*сокращаем футер целиком поэтапно*/
+@media screen and (max-width: 760px) {
+    footer {
+        padding: 50px 110px 50px 110px;
+    }
+}
+@media screen and (max-width: 600px) {
+    footer {
+        padding: 50px 50px 50px 50px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    footer {
+        padding: 10px 10px 10px 10px;
+    }
+}
+/*КОНЕЦ сокращаем футер целиком*/
+
+#logo-top-pc {
+    display: block;
+}
+
+.logo-top-title {
+    display: inline-block;
+}
+
+#logo-top-mobile {
+    display: none;
+}
+
+#logo-top-mobile .logo-top-title {
+    font-size: 15px;
+    width: 142px;
+    margin: 0;
+    position: relative;
+    bottom: 22px;
+}
+
+#logo-top-mobile .logo-top {
+    margin: 7px 3px;
+    display: inline-block;
+}
+
+@media screen and (max-width: 340px) {
+    footer {
+        padding: 0;
+    }
+
+    #logo-top-pc {
+        display: none;
+    }
+
+    #logo-top-mobile {
+        display: block;
+    }
+
+    #search-button {
+        margin: 30px 0 0 0;
+    }
+
+    #header {
+        height: 50px;
+    }
+
+    .misc-mobile {
+        margin: 0 0 40px 50px;
+        display: inline-block;
+        color: #91919f;
+    }
+
+    .misc-mobile .select-wrapper, .misc-mobile .weather {
+        display: inline-block;
+    }
+
+    .misc-mobile .weather {
+        top: 0;
+        left: 0;
+        margin-left: 15px;
+        display: inline-block;
+    }
+
+    .misc-mobile .news-time {
+        top: 2px;
+        left: 0;
+        margin-left: 15px;
+        padding-left: 20px;
+        position: relative;
+        display: inline-block;
+        background-size: 15px;
+    }
+}
+
+
+/*преобразовываем меню в футере*/
+@media screen and (max-width: 470px) {
+    .footer-menu li:nth-child(6) {
+        margin-top: 0;
+    }
+
+    .footer-menu li:nth-child(n+6) {
+        margin-left: 0;
+    }
+
+    ul.footer-menu {
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #datetime {
+        display: none;
+    }
+
+    .footer__right {
+        min-width: 245px;
+    }
+}
