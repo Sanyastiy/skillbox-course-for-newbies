@@ -218,48 +218,65 @@
     footer {
         padding: 50px 50px 50px 50px;
     }
-}
 
-@media screen and (max-width: 550px) {
-    footer {
-        padding: 10px 10px 10px 10px;
+    .special-news-big {
+        width: 320px;
     }
-    .standart-column{display: block;}
-    .center-left + .center-right {
-        margin-left: 0;
+
+    .special-news-big .main-news__props_center {
+        padding-top: 30px;
     }
-}
 
-/*КОНЕЦ сокращаем футер целиком*/
+    @media screen and (max-width: 550px) {
+        footer {
+            padding: 10px 10px 10px 10px;
+        }
 
-#logo-top-pc {
-    display: block;
-}
+        .standart-column {
+            display: block;
+        }
 
-.logo-top-title {
-    display: inline-block;
-}
+        .center-left + .center-right {
+            margin-left: 0;
+        }
+    }
 
-#logo-top-mobile {
-    display: none;
-}
+    /*КОНЕЦ сокращаем футер целиком*/
+    #logo-top-pc {
+        display: block;
+    }
 
-#logo-top-mobile .logo-top-title {
-    font-size: 15px;
-    width: 142px;
-    margin: 0;
-    position: relative;
-    bottom: 22px;
-}
+    .logo-top-title {
+        display: inline-block;
+    }
 
-#logo-top-mobile .logo-top {
-    margin: 7px 3px;
-    display: inline-block;
-}
+    #logo-top-mobile {
+        display: none;
+    }
 
-@media screen and (max-width: 340px) {
+    #logo-top-mobile .logo-top-title {
+        font-size: 15px;
+        width: 142px;
+        margin: 0;
+        position: relative;
+        bottom: 22px;
+    }
+
+    #logo-top-mobile .logo-top {
+        margin: 7px 3px;
+        display: inline-block;
+    }
+
+    /*инлайн для того, чтобы телефон и почта в фотере не разлетались на разные строки*/
+    .footer__phone, .footer__phone *, .footer__mail, .footer__mail * {
+        display: inline-block;
+    }
+
+    @media screen and (max-width: 340px) {
+
+    }
     footer {
-        padding: 0;
+        padding: 10px 0 0 0;
     }
 
     #logo-top-pc {
@@ -306,9 +323,32 @@
     }
 }
 
+@media screen and (max-width: 600px) {
+    .main-news {
+        width: 320px;}
+    .main-news__props_center {
+        padding-top: 50px;}
+
+    #datetime {
+        display: none;
+    }
+
+    .footer__right {
+        min-width: 245px;
+    }
+}
+
 
 /*преобразовываем меню в футере*/
 @media screen and (max-width: 470px) {
+
+    .special-news-big,.main-news  {
+        width: 220px;
+    }
+
+    .special-news-big .h3 {
+        font-size: 22px;
+    }
     .footer-menu li:nth-child(6) {
         margin-top: 0;
     }
@@ -322,12 +362,3 @@
     }
 }
 
-@media screen and (max-width: 600px) {
-    #datetime {
-        display: none;
-    }
-
-    .footer__right {
-        min-width: 245px;
-    }
-}
