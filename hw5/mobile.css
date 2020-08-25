@@ -2,7 +2,19 @@
 .mobile-menu {
     display: inline-block;
 }
-
+#logo-top-mobile {
+    display: none;
+}
+#logo-top-pc .logo-top-title{
+    font-weight: 700;
+    margin-left: 10px;
+}
+#logo-top-pc .logo-top{
+    margin-top: 40px;
+}
+.logo-top,#logo-top-pc .logo-top-title{
+    display: inline-block;
+}
 .mobile-menu__btn {
     display: inline-block;
     margin-top: 37px;
@@ -149,8 +161,7 @@
     background-image: url("img/icon-time-mobile.png");
 }
 
-.logo-top-title {
-    display: none;
+#logo-top-mobile .logo-top-title {
     margin: 50px 0 0 20px;
     font-weight: 700;
     letter-spacing: -.5px;
@@ -213,8 +224,11 @@
         padding: 50px 110px 50px 110px;
     }
 }
-
+#logo-top-mobile .logo-top-title {
+    display: none;}
 @media screen and (max-width: 600px) {
+    #logo-top-pc .logo-top-title {
+        display: none;}
     footer {
         padding: 50px 50px 50px 50px;
     }
@@ -242,17 +256,15 @@
     }
 
     /*КОНЕЦ сокращаем футер целиком*/
-    #logo-top-pc {
+
+    /*#logo-top-pc {
         display: block;
     }
-
-    .logo-top-title {
+*/
+    #logo-top-mobile .logo-top-title {
         display: inline-block;
     }
 
-    #logo-top-mobile {
-        display: none;
-    }
 
     #logo-top-mobile .logo-top-title {
         font-size: 15px;
