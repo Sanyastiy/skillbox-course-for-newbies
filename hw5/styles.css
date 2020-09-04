@@ -237,11 +237,6 @@ ul.top-menu {
     border-color: #448ccb;;
 }
 
-.all-news-button-text {
-    display: table-cell;
-    vertical-align: middle;
-}
-
 #column-center {
     width: 460px;
 
@@ -255,7 +250,7 @@ ul.top-menu {
     padding: 0 20px;
 }
 
-.main-news__props_center {
+.main-news-props-center {
     padding-top: 110px;
     font-size: 0.8em;
     color: white;
@@ -269,14 +264,6 @@ ul.top-menu {
     /*background-image: url("img/clock.png");*/
     left: 0;
     color: white;
-}
-
-.main-news__time_center {
-    left: 0;
-}
-
-.main-news__props {
-    position: absolute;
 }
 
 #central-container {
@@ -474,10 +461,6 @@ footer {
 
 .footer__mail .footer__enquiry {
     margin: 10px 0 0 1px;
-}
-
-.list-item {
-    display: list-item;
 }
 
 .most-readable-news .news-time {

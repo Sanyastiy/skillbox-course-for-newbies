@@ -99,7 +99,7 @@
     display: none;
 }
 
-.mobile-menu__checkbox:checked ~ .mobile-menu__nav {
+.mobile-menu__checkbox:checked{ /*~ .mobile-menu__nav {*/
     opacity: 1;
     transition-delay: 0s;
 }

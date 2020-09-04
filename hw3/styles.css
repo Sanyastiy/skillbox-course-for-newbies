@@ -2,7 +2,7 @@ html, body {
     margin: 0;
     padding: 0;
     min-width: 1000px;
-    font-family: Arial;
+    font-family: Arial, sans-serif;
 }
 
 h1 {
@@ -235,14 +235,8 @@ ul.top-menu {
     border-color: #448ccb;;
 }
 
-.all-news-button-text {
-    display: table-cell;
-    vertical-align: middle;
-}
-
 #column-center {
     width: 460px;
-
     margin: 0 20px;
     float: left;
 }
@@ -264,17 +258,8 @@ ul.top-menu {
 }
 
 .news-time_center {
-    /*background-image: url("img/clock.png");*/
     left: 0;
     color: white;
-}
-
-.main-news__time_center {
-    left: 0;
-}
-
-.main-news__props {
-    position: absolute;
 }
 
 #central-container {
@@ -366,6 +351,7 @@ ul.top-menu {
     background-color: white;
 }
 
+/*noinspection ALL*/
 .special-news-big__text {
     font-size: 13.5px;
     color: white;
@@ -377,6 +363,7 @@ ul.top-menu {
     margin: 23px 30px 12px 0;
 }
 
+/*noinspection ALL*/
 .most-readable-news h4 {
     font-size: 15px;
     letter-spacing: 0.2px;
@@ -458,6 +445,7 @@ footer {
     padding-left: 20px;
 }
 
+/*noinspection ALL*/
 .footer__right h4 {
     margin: 6px 15px;
     color: white;
@@ -474,10 +462,6 @@ footer {
 
 .footer__mail .footer__enquiry {
     margin: 10px 0 0 1px;
-}
-
-.list-item {
-    display: list-item;
 }
 
 .most-readable-news .news-time {

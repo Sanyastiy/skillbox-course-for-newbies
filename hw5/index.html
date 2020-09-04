@@ -40,11 +40,11 @@
                 <img alt="Планетка" class="logo-top" src="img/internet.png">
                 <p class="logo-top-title">Новостное <br>агенство</p>
             </div>
-            <div id="logo-top-mobile">
+            <span id="logo-top-mobile">
                 <nav class="mobile-menu">
                     <input type="checkbox" id="checkbox" class="mobile-menu__checkbox">
                     <label for="checkbox" class="mobile-menu__btn">
-                        <div class="mobile-menu__icon"></div>
+                        <span class="mobile-menu__icon"></span>
                     </label>
                     <div class="mobile-menu__container">
                         <ul class="mobile-menu__list">
@@ -62,10 +62,10 @@
                 </nav>
                 <img alt="планетка" class="logo-top" src="img/internet.png">
                 <p class="logo-top-title">Новостное агенство</p>
-            </div>
+            </span>
+        </div>
             <label class="select-wrapper">
                 Выбор города
-
                 <select class="custom-select">
                     <option value="Msc">Москва</option>
                 </select>
@@ -73,7 +73,9 @@
             </label>
 
             <form class="search">
-                <input type="search" placeholder="Поиск по сайту">
+                <label>
+                    <input type="search" placeholder="Поиск по сайту">
+                </label>
                 <button class="search-button">
                 </button>
             </form>
@@ -81,7 +83,7 @@
             <div id="search-button" class="search-button"></div>
             <span class="weather">+ 12 &deg;</span>
         </div>
-    </div>
+
 </header>
 <div id="menu-container">
     <div class="fixed-container">
@@ -182,7 +184,7 @@
         </div>
         <div id="column-center">
             <div class="main-news">
-                <div class="main-news__props_center">/Политика</div>
+                <div class="main-news-props-center">/Политика</div>
                 <div class="h3">В Крыму отреагировали на слова Кравчука <br> о возврате полуострова</div>
                 <div class="news-item-props">
                     <div class=" news-time_center">
@@ -240,97 +242,102 @@
             <img alt="Ad" src="img/banner-2.png">
         </div>
     </div>
-    <div class="fixed-container fixed-container__bottom">
-        <div class="special-news-big standart-column">
-            <div class="main-news__props_center">/Политика</div>
-            <div class="h3">Пекин объявил Вашингтон<br> в развязывании торговой<br> войны</div>
-            <div class="news-item-props">
-                <div class="news-time_center">
-                    <script type="text/javascript">var fullDate = myDate.getDate() + " " + months[myDate.getMonth()] + " " + myDate.getFullYear() + " " + myDate.getHours() + ":" + myDate.getMinutes();
-                    document.write(fullDate);</script>
-                </div>
-            </div>
-            <div class="special-news-big__text">Министерство коммерции Китая заявило, что Пекин примет
-                "качественные" <br>и "колличественные" меры, если президент США Дональд Трамп введет <br>дополнительные
-                пошлины на китайские товары
-            </div>
-        </div>
-        <div class="most-readable-news standart-column">
-            <div class="h2">Самые читаемые новости</div>
-            <div class="news-item">
-                <div class="h4">
-                    В Турции пообещали найти альтернативу из-за отказа США поставить F-35
-                </div>
+    <div class="fixed-container">
+        <div class="fixed-container__bottom">
+            <div class="special-news-big standart-column">
+                <div class="main-news-props-center">/Политика</div>
+                <div class="h3">Пекин объявил Вашингтон<br> в развязывании торговой<br> войны</div>
                 <div class="news-item-props">
-                    <a href="#">/Политика</a>
-                    <div class="news-time">10:45</div>
-                    <div class="news-comments-count">17</div>
+                    <div class="news-time_center">
+                        <script type="text/javascript">var fullDate = myDate.getDate() + " " + months[myDate.getMonth()] + " " + myDate.getFullYear() + " " + myDate.getHours() + ":" + myDate.getMinutes();
+                        document.write(fullDate);</script>
+                    </div>
+                </div>
+                <div class="special-news-big__text">Министерство коммерции Китая заявило, что Пекин примет
+                    "качественные" <br>и "колличественные" меры, если президент США Дональд Трамп введет <br>дополнительные
+                    пошлины на китайские товары
                 </div>
             </div>
-            <div class="news-item">
-                <div class="h4">
-                    Назван минимальный доход для причисления к среднему классу
+            <div class="most-readable-news standart-column">
+                <div class="h2">Самые читаемые новости</div>
+                <div class="news-item">
+                    <div class="h4">
+                        В Турции пообещали найти альтернативу из-за отказа США поставить F-35
+                    </div>
+                    <div class="news-item-props">
+                        <a href="#">/Политика</a>
+                        <div class="news-time">10:45</div>
+                        <div class="news-comments-count">17</div>
+                    </div>
                 </div>
-                <div class="news-item-props">
-                    <a href="#">/Политика</a>
-                    <div class="news-time">10:45</div>
-                    <div class="news-comments-count">17</div>
+                <div class="news-item">
+                    <div class="h4">
+                        Назван минимальный доход для причисления к среднему классу
+                    </div>
+                    <div class="news-item-props">
+                        <a href="#">/Политика</a>
+                        <div class="news-time">10:45</div>
+                        <div class="news-comments-count">17</div>
+                    </div>
                 </div>
-            </div>
-            <div class="news-item">
-                <div class="h4">
-                    Назван минимальный доход для причисления к среднему классу
-                </div>
-                <div class="news-item-props">
-                    <a href="#">/Транспорт</a>
-                    <div class="news-time">10:45</div>
-                    <div class="news-comments-count">17</div>
+                <div class="news-item">
+                    <div class="h4">
+                        Назван минимальный доход для причисления к среднему классу
+                    </div>
+                    <div class="news-item-props">
+                        <a href="#">/Транспорт</a>
+                        <div class="news-time">10:45</div>
+                        <div class="news-comments-count">17</div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
 </div>
 <footer class="footer">
-    <div class="fixed-container fixed-container__footer">
-        <div class="footer__left standart-column">
-            <nav>
-                <ul class="footer-menu">
-                    <li><a href="#">Главная</a></li>
-                    <li><a href="#">Политика</a></li>
-                    <li><a href="#">Общество</a></li>
-                    <li><a href="#">Экономика</a></li>
-                    <li><a href="#">В мире</a></li>
-                    <li><a href="#">Проишествия</a></li>
-                    <li><a href="#">Спорт</a></li>
-                    <li><a href="#">Наука</a></li>
-                    <li><a href="#">Туризм</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="footer__center standart-column">
-            <img alt="Logo" id="logo-bottom" src="img/logoreal.png">
-            <nav>
-                <ul class="footer-menu">
-                    <li><a href="#">Об агенстве</a></li>
-                    <li><a href="#">Контакты</a></li>
-                    <li><a href="#">Опубликовать новость</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="footer__right standart-column">
-            <div>
-                <img alt="Vk" class="footer__socials" src="img/vk.png">
-                <img alt="Fb" class="footer__socials" src="img/fb.png">
-                <img alt="Twitter" class="footer__socials" src="img/twitter.png">
-                <img alt="Inst" class="footer__socials" src="img/instagram.png">
+    <div class="fixed-container">
+        <div class="fixed-container__footer">
+            <div class="footer__left standart-column">
+                <nav>
+                    <ul class="footer-menu">
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="#">Политика</a></li>
+                        <li><a href="#">Общество</a></li>
+                        <li><a href="#">Экономика</a></li>
+                        <li><a href="#">В мире</a></li>
+                        <li><a href="#">Проишествия</a></li>
+                        <li><a href="#">Спорт</a></li>
+                        <li><a href="#">Наука</a></li>
+                        <li><a href="#">Туризм</a></li>
+                    </ul>
+                </nav>
             </div>
-            <div class="footer__phone">
-                <img alt="Phone" class="footer__enquiry standart-column" src="img/call-answer.png">
-                <h4 class="standart-column">+7 (499) 995-55-55</h4>
+            <div class="footer__center standart-column">
+                <img alt="Logo" id="logo-bottom" src="img/logoreal.png">
+                <nav>
+                    <ul class="footer-menu">
+                        <li><a href="#">Об агенстве</a></li>
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#">Опубликовать новость</a></li>
+                    </ul>
+                </nav>
             </div>
-            <div class="footer__mail">
-                <img alt="Email" class="footer__enquiry standart-column" src="img/envelope.png">
-                <h4 class="standart-column">info@agency.ru</h4>
+            <div class="footer__right standart-column">
+                <div>
+                    <img alt="Vk" class="footer__socials" src="img/vk.png">
+                    <img alt="Fb" class="footer__socials" src="img/fb.png">
+                    <img alt="Twitter" class="footer__socials" src="img/twitter.png">
+                    <img alt="Inst" class="footer__socials" src="img/instagram.png">
+                </div>
+                <div class="footer__phone">
+                    <img alt="Phone" class="footer__enquiry standart-column" src="img/call-answer.png">
+                    <h4 class="standart-column">+7 (499) 995-55-55</h4>
+                </div>
+                <div class="footer__mail">
+                    <img alt="Email" class="footer__enquiry standart-column" src="img/envelope.png">
+                    <h4 class="standart-column">info@agency.ru</h4>
+                </div>
             </div>
         </div>
     </div>
